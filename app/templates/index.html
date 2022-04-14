@@ -1,12 +1,14 @@
 {%extends 'base.html'%}
 {%block conteudo%}
 
-    <h2>Hello {{nome}}</h2>
+    <h2>{{nome}}</h2>
+    <img src="{{url_for('static', filename='img/imagem.jpg')}}">
     <p>
-        <img src="{{url_for('static',filename='imagem.jpg')}}">
-        Profissão: {{dados.Profissão}}<br/>
-        Teste: {{dados.Teste}}
+        Profissão: {{dados.Profissão}} </br>
+        Canal: {{dados.Canal}}
     </p>
+
+
     
 {%endblock%}
 

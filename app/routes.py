@@ -6,9 +6,10 @@ from flask import render_template
 @app.route('/index')
 
 def index():
-    nome = "Alba"
-    dados = {"Profissão": "Professora", "Teste": "Teste"}
+    nome = "teste"
+    dados = {"Profissão": "Professora", "Canal": "Youtube"}
     return render_template('index.html', nome=nome, dados=dados)
+    
 
 @app.route('/contato')    
 def contato():

@@ -5,13 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='estilo.css'}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/materialize.css')}}">
+    
 </head>
 <body>    
     <nav>
-        <a href="/index">Página Inicial</a> |
-        <a href="/contato">Contato</a>
-    </nav>
+        <div class="nav-wrapper">
+          <a href="/index" class="brand-logo">Logo</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/index">Index</a></li>
+            <li><a href="/contato">Contato</a></li>
+            <div class="row">
+          </ul>
+        </div>
+      </nav>
 
     {%block conteudo%}
     {%endblock%}
